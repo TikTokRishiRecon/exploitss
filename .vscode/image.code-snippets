@@ -1,0 +1,16 @@
+{
+	"buttons": {
+		"prefix": "img",
+		"body": [
+			"        <div class=\"row\">",
+			"            <div class=\"span1\">",
+			"                <div style=\"padding-top: 5px;\" class=\"card animals\" loading=\"lazy\"><a href=\"$3\">",
+			"                        <img class=\"icon\" src=\"$2\"></a>",
+			"                    <p4>$1</p4>",
+			"                </div>",
+			"            </div>",
+			"        </div>"
+		],
+		"description": "buttons"
+	}
+}
