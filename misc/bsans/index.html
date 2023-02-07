@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bad Time Simulator</title>
+
+    <!-- Standardised web app manifest -->
+    <link rel="manifest" href="appmanifest.json" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body {
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The canvas must be inside a div called c2canvasdiv. -->
+    <div id="c2canvasdiv">
+      <!-- Project renders to this canvas. -->
+      <canvas id="c2canvas" width="640" height="480"></canvas>
+    </div>
+
+    <!-- C2 needs jQuery. -->
+    <script src="jquery-2.1.1.min.js"></script>
+
+    <!-- The Construct 2 runtime. -->
+    <script src="c2runtime.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+      // Start the Construct 2 project running on window load.
+      jQuery(document).ready(function () {
+        // Create new runtime using the c2canvas.
+        cr_createRuntime("c2canvas");
+      });
+    </script>
+  </body>
+</html>
