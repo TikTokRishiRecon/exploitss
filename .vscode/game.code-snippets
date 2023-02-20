@@ -1,0 +1,18 @@
+{
+  "Games": {
+    "prefix": "game",
+    "body": [
+      "<div class=\"row\">",
+      "        <div class=\"span1\">",
+      "          <div style=\"padding-top: 5px\" class=\"card animals\" loading=\"lazy\">",
+      "            <a href=\"${1:example}\">",
+      "              <img class=\"icon\" src=\"${3:example}\"",
+      "            /></a>",
+      "            <p4>${2:example}</p4>",
+      "          </div>",
+      "        </div>",
+      "      </div>"
+    ],
+    "description": "Games"
+  }
+}
